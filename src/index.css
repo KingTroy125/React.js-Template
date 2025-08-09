@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark theme design system - matches the hero aesthetic */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 0% 90%;
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 61%;
+
+    --accent: 345 84% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 345 84% 47%;
+
+    --radius: 0.5rem;
+
+    /* Hero-specific design tokens */
+    --hero-bg: 0 0% 0%;
+    --hero-text: 0 0% 100%;
+    --hero-text-shadow: 0 0% 0% / 0.15;
+    --hero-subtitle: 0 0% 100%;
+    --hero-subtitle-shadow: 0 0% 0% / 0.25;
+    --hero-button: 0 0% 90%;
+    --hero-button-text: 18 4% 19%;
+    --hero-meta: 0 0% 61%;
+    --hero-badge-bg: 345 41% 14%;
+    --hero-badge-inner: 345 65% 5%;
+    --hero-badge-glow: 345 84% 47% / 0.1;
+    
+    /* Gradients */
+    --gradient-hero: radial-gradient(ellipse at center, hsl(345 84% 47% / 0.05) 0%, hsl(var(--hero-bg)) 70%);
+    --gradient-button: linear-gradient(135deg, hsl(var(--hero-button)), hsl(0 0% 95%));
+
+    /* Navbar-specific design tokens */
+    --navbar-bg: linear-gradient(177deg, hsl(0 0% 7% / 0.75) 5%, hsl(0 0% 6% / 0.9) 76%);
+    --navbar-border: 0 0% 100% / 0.06;
+    --navbar-shadow: 0 0% 100% / 0.15;
+    --navbar-text: 0 0% 61%;
+    --navbar-text-hover: 0 0% 90%;
+    --navbar-logo-bg: 0 0% 20%;
+    --navbar-logo-text: 0 0% 90%;
+    
+    /* Shadows and effects */
+    --shadow-text: 0 4px 4px hsl(var(--hero-text-shadow));
+    --shadow-button: 0 1px 0.4px hsl(0 0% 100%) inset;
+    --shadow-glow: 0 0 20px hsl(var(--hero-badge-glow));
+    /* AI section design tokens */
+    --ai-badge-text: 345 65% 56%;
+    --ai-badge-bg: radial-gradient(ellipse 13.65% 50% at 50% 50%, hsl(345 65% 56% / 0.1) 0%, transparent 100%);
+    --ai-text: 0 0% 100%;
+    --ai-text-muted: 0 0% 42%;
+    --ai-interface-bg: linear-gradient(0deg, hsl(0 0% 5%) 0%, hsl(0 0% 5%) 33%, hsl(0 0% 3%) 33%, hsl(0 0% 3%) 100%);
+    --ai-interface-overlay: 0 0% 0% / 0.6;
+    --ai-interface-border: 143 141 145 / 0.2;
+    --ai-interface-inset: 0 0% 100% / 0.3;
+    --ai-interface-backdrop: 0 0% 100% / 0.05;
+    --ai-feature-active: 0 0% 100%;
+    --ai-feature-inactive: 0 0% 26%;
+    --ai-progress-bg: 345 38% 22%;
+    --ai-progress-gradient: linear-gradient(90deg, hsl(345 38% 22%) 0%, hsl(345 41% 70%) 93%, hsl(345 52% 26%) 100%, hsl(345 38% 22%) 100%);
+    --ai-arrow-color: 0 0% 100%;
+    
+    /* Footer design tokens */
+    --footer-bg: linear-gradient(180deg, hsl(0 0% 3% / 0.8) 0%, hsl(0 0% 3%) 32%), radial-gradient(ellipse 49.41% 64.58% at 49.4% -4950%, hsl(0 0% 100% / 0.03) 0%, transparent 100%);
+    --footer-border: 0 0% 11%;
+    --footer-text: 0 0% 100%;
+    --footer-text-muted: 0 0% 61%;
+    --footer-text-light: 0 0% 100% / 0.4;
+    --footer-input-bg: 0 0% 100% / 0.05;
+    --footer-input-border: 0 0% 100% / 0.05;
+    --footer-button-bg: 0 0% 100% / 0.9;
+    --footer-button-text: 0 0% 0%;
+    
+    /* Call-to-action section design tokens */
+    --cta-text: 0 0% 100%;
+    --cta-text-muted: 0 0% 42%;
+    --cta-bg-gradient: radial-gradient(ellipse 43.10% 67.12% at 48.11% 80%, hsl(0 0% 85%) 0%, transparent 100%);
+    
+    /* Features section design tokens */
+    --features-text: 0 0% 100%;
+    --features-text-muted: 0 0% 61%;
+    --features-highlight: 154 100% 85%;
+    --features-highlight-glow: 154 170 255 / 0.65;
+    --features-badge-bg: 0 0% 11%;
+    --features-card-bg: 149 99 255 / 0.02;
+    --features-card-border: 0 0% 100% / 0.25;
+    --features-gradient: radial-gradient(ellipse 94.75% 100% at 20.94% 22%, hsl(0 0% 85%) 66%, transparent 76%);
+    
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 345 84% 47%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 345 84% 47%;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
