@@ -22,7 +22,7 @@ const CallToActionSection = () => {
           <div className="relative w-full">
             <div className="relative px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
               <img 
-                src="/lovable-uploads/83bbc16b-cf90-46a1-9231-efbf64278ceb.png"
+                src="/assets/83bbc16b-cf90-46a1-9231-efbf64278ceb.png"
                 alt="Raycast keyboard interface with command shortcuts"
                 className="w-full h-auto max-h-[700px] object-cover rounded-2xl mx-auto"
               />

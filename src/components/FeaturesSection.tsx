@@ -132,7 +132,7 @@ const FeaturesSection = () => {
                     style={{ background: 'rgba(255, 149, 99, 0.02)' }}
                   >
                     <img 
-                      src="/lovable-uploads/83bbc16b-cf90-46a1-9231-efbf64278ceb.png"
+                      src="/assets/83bbc16b-cf90-46a1-9231-efbf64278ceb.png"
                       alt="Advanced workflow automation interface"
                       className="w-full h-full object-cover rounded-2xl"
                     />
